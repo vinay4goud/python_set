@@ -1,0 +1,62 @@
+# set is a collection which is unordered and unindexed. In Python sets are written with curly brackets.
+
+a = {"apple", "banana", "cherry"}
+
+print (a)
+
+# add items
+
+a.add("orange")
+print(a)
+
+# ADD MULTIPLE ITEMS  TO SE  , USING  update() METHOD
+
+a.update(["mango", "grapes"])
+
+print(a)
+
+# length of the set 
+
+print(len(a))
+
+# remove item 
+
+a.remove ("banana")
+
+print(a) # If the item to remove does not exist, remove() will raise an error.
+
+# we can remove  item using  discard() method
+
+a.discard("banana")
+
+print(a) # If the item to remove does not exist, discard() will NOT raise an error.
+
+#  pop() method also  can be used  to remove  item by giving  an index or  by default  it  removes  last  item  if any  index is not mentioned
+
+x = a.pop()
+
+print (x)
+
+print(a)
+
+# clear() method empties the set
+
+a. clear()
+
+print(a)
+
+# DEL keyword will delete the set completely
+
+b = { "apple","banana", "chery"}
+
+del b
+
+print(b)
+
+#  set() constructor
+# it is  possible to use  set() constructor to make  a set
+
+a = set(("apple", "banana", "cherry"))
+
+print(a) #  output  will be {""apple", "banana", "cherry" }
+
